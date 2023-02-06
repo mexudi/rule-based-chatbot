@@ -1,4 +1,4 @@
-from ntlk.chat.util import Chat, reflections
+from nltk.chat.util import Chat, reflections
 
 #Pairs is a list of patterns and response
 pairs = [
@@ -23,6 +23,35 @@ pairs = [
         ['Its alright','Its ok, never mind','come on it is not a big deal','come on! why you are sorry!']
     ],
     [
-        r"I am (.*) (good|well|okay|ok)"
-    ]
+        r"I am (.*) (good|well|okay|ok)",
+        ["I am glad to hear that", "Nice to hear that", "Alright, great!",]
+    ],
+    [
+        r"(hi|hey|hello|hola|holla|hi)(.*)",
+        ["Hello","Hey there","hey! whats up",]
+    ],
+    [
+        r"what (.*) want ?",
+        ["Make me an offer I can not refuse",]
+    ],
+    [
+        r"(.*) (location|city) ?",
+        ['Tetouan, Morocco',]
+    ],
+    [
+        r"(.*)raining in (.*)",
+        ['I have no idea because I do not have access to internet','I would suggest to check an online website',]
+    ],
+    [
+        r"(.*)created(.*)",
+        ["Soufiane Lamchoudi created me using Python's NLTK library, and my name is inspired from his nickname since people call him Mexudi",]
+    ],
+    [
+        r"quit",
+        ['It was nice talking to you, see you soon and take care']
+    ],
+    [
+        r"(.*)",
+        ['That is nice to hear','hmm interesting']
+    ],
 ]
