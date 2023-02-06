@@ -55,3 +55,5 @@ pairs = [
         ['That is nice to hear','hmm interesting']
     ],
 ]
+#test the reflection
+print(reflections)
